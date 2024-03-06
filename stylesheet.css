@@ -1,0 +1,30 @@
+.puppy-img {
+    width: 200px;
+    height: 200px;
+    transition: 2s;
+    animation-name: appear;
+    animation-duration: 3s;
+  }
+
+  .puppy-img:hover {
+      /* scale (length, width) */
+      transform: scale(1.5, 1.5);
+      rotate: 45deg;
+      filter: grayscale(100%);
+  }
+
+  @keyframes appear {
+      0% {
+          width: 100px;
+          height: 100px;
+      }
+      50% {
+          width: 300px;
+          height: 300px;
+      }
+      100% {
+          width: 200px;
+          height: 200px;
+      }
+  }
+  
